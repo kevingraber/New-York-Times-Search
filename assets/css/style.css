@@ -1,0 +1,36 @@
+.jumbotron {
+	background-color:#20315A;
+	color:white;
+}
+
+h1 {
+	font-family: 'Sanchez', serif;
+}
+
+p {
+	font-family: 'Sanchez', serif;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-family: 'Sanchez', serif;
+	margin-top: 0px;
+}
+
+label, a, input {
+	font-family: 'Sanchez', serif;
+}
+
+button {
+	font-family: 'Sanchez', serif;
+}
+
+#articleArea {
+	transition: .5s;
+}
+
+.italics {
+	font-style: italic;
+}
+
+/*#2c3e50*/

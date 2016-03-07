@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New York Times Search</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Quicksand|Josefin+Slab|Sanchez:400,400italic|Quattrocento|Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container">
+
+<div class="row">
+	
+	<div class="jumbotron text-center">
+		<h1><!-- <img src="newspaper.png"> --><span class="glyphicon glyphicon-education" aria-hidden="true"></span> New York Times Search</h1>
+	</div>
+
+</div>
+
+<div class="row">
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span> Search Parameters</h3>
+		</div>
+		<div class="panel-body">
+
+			<form>
+				<div class="form-group">
+				    <label>Search Term:</label>
+				    <input class="form-control" id="searchTerms" required>
+				</div>
+
+				<div class="form-group">
+					<label>Number of Records to Retrieve</label>
+				    <select class="form-control" id="recordNum">
+				    	<option value="1">1</option>
+				    	<option value="5" selected>5</option>
+				    	<option value="10">10</option>
+				    </select>
+				</div>
+
+				<div class="form-group">
+				    <label>Start Year (Optional): </label>
+				    <input class="form-control" id="startYear">
+				</div>
+
+
+				<div class="form-group">
+				    <label>End Year (Optional): </label>
+				    <input class="form-control" id="endYear">
+				</div>
+
+				<button class="btn btn-lg" type="button" id="submit">Submit</button>
+				<button class="btn btn-lg" type="button" id="reset">Clear Results</button>
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Top Articles</h3>
+		</div>
+		<div class="panel-body" id="articleArea"></div>
+	</div>
+</div>
+
+
+</div>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
+
+<!-- For images.. -->
+<!-- http://static01.nyt.com/ -->
